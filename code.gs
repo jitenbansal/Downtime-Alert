@@ -29,14 +29,14 @@ function myFunction() {
             
             if (last_status == "down") {
                 scriptProperties.setProperty("last_status", "up");
-                MailApp.sendEmail(recipient, up_subject, down_message);
+                MailApp.sendEmail(recipient, up_subject, up_message);
             }
         }
         else {
 
             if (last_status == "up") {
                 scriptProperties.setProperty("last_status", "down");
-                MailApp.sendEmail(recipient, down_subject, up_message);
+                MailApp.sendEmail(recipient, down_subject, down_message);
             }
         }
     }
