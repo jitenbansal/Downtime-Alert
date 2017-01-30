@@ -45,7 +45,7 @@ function myFunction() {
         Logger.log(error);
         if (last_status == "up") {
             scriptProperties.setProperty("last_status", "down");
-            MailApp.sendEmail(recipient, down_subject, up_message);
+            MailApp.sendEmail(recipient, down_subject, down_subject);
         }
         return;
     }
